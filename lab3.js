@@ -57,7 +57,7 @@ const analyticsData = [
     // Hint: Keep track of max duration and corresponding user name
     let max = data[0]
     for (let i = 0; i < data.length; i++) {
-      if (data[i] > max) {
+      if (data[i].avgSessionDuration > max.avgSessionDuration) {
         max = data[i]
       }
     }
